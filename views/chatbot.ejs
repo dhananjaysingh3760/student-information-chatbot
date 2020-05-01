@@ -48,34 +48,34 @@
     </section>
 <section>
 <div id="chatbot-container" class="conatiner fluid">
-    <p class="bot-reply"><span class="text-box">Hello</span> </p>
-    <p class="bot-reply"><span class="text-box">My name is NAVIGATOR</span></p>
-    <p class="bot-reply"><span class="text-box">What should i call you?</span></p>
+    <p class="bot-reply"><span class="text-box1">Hello</span> </p>
+    <p class="bot-reply"><span class="text-box1">My name is NAVIGATOR</span></p>
+    <p class="bot-reply"><span class="text-box1">What should i call you?</span></p>
 
     <div class="user-reply stage1-query">
-        <label><span class="text-box">Write your first name-></span></label><br>
-        <input class="name-textfield" type="text" name = "name" placeholder="name" autocomplete="off">
+        <label><span class="text-box2">Write your first name-></span></label><br>
+        <input class="all-textfields name-textfield" type="text" name = "name" placeholder="name" autocomplete="off">
         <input  class="all-buttons btn btn-warning btn-S1" type="submit" value = "ok" name="stage1">
     </div>
 
-    <p class="name user-reply "><span id="name1" class="text-box"></span></p>
+    <p class="name user-reply "><span id="name1" class="text-box2"></span></p>
 
     <div class="stage2-query">
-        <p id="special" class="name1 bot-reply"><span id="name2" class="text-box"></span></p>
-        <p id="margin-p" class="bot-reply"><span class="text-box">What!! a nice name</span></p>
-        <p class="bot-reply"><span class="text-box">So,how could i help you?</span></p>
-        <p class="bot-reply"><span class="text-box">Enter ,which info u want to access-></span></p>
+        <p id="special" class="name1 bot-reply"><span id="name2" class="text-box1"></span></p>
+        <p id="margin-p" class="bot-reply"><span class="text-box1">What!! a nice name</span></p>
+        <p class="bot-reply"><span class="text-box1">So,how could i help you?</span></p>
+        <p class="bot-reply"><span class="text-box1">Enter ,which info u want to access-></span></p>
         <div class="btn-S2">
             <button class="all-buttons btn btn-warning bot-reply btni-S2" value="students information">Students Information</button>
             <button class="all-buttons btn btn-warning bot-reply btnr-S2" value="students result">Students Result</button>
         </div>
     </div>
 
-    <p class="user-reply which-info"><span id="which-info" class="text-box"></span></p>
+    <p class="user-reply which-info"><span id="which-info" class="text-box2"></span></p>
 
     <div class="user-reply stage3-query-info">
         <form action="/chatbot" method="POST">
-            <label><span class="text-box">Write the student's name to get info-></span></label><br>
+            <label><span class="text-box2">Write the student's name to get info-></span></label><br>
             <input type="text" name="stdName" placeholder="Student Name" autocomplete="off">
             <input class="all-buttons btn btn-warning" type="submit" value="ok">
         </form>
@@ -83,8 +83,8 @@
 
     <div class="user-reply stage3-query-result">
         <form action="/chatbot" method="POST">
-            <label><span class="text-box">write the student's name to get result</span></label><br>
-            <input type="text" name="stdName" placeholder="Student Name" autocomplete="off">
+            <label><span class="text-box2">write the student's name to get result</span></label><br>
+            <input class="all-textfields" type="text" name="stdName" placeholder="Student Name" autocomplete="off">
             <input class="all-buttons btn btn-warning" type="submit" value="ok">
         </form></div>
     </div></div>

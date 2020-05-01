@@ -116,13 +116,22 @@ body {
     text-align: right;
 }
 
-.text-box {
+.text-box1 {
     font-weight: bold;
     color: #c7f0db;
     border-radius: 15px;
     font-size: 2rem;
     padding: 5px;
     background-color: #6c7b95;
+}
+
+.text-box2 {
+    font-weight: bold;
+    color: #6c7b95;
+    border-radius: 15px;
+    font-size: 2rem;
+    padding: 5px;
+    background-color: #c7f0db;
 }
 
 #special {
@@ -145,4 +154,12 @@ body {
     border-color: #464159;
     background-color: #8bbabb;
     color: #464159;
+}
+
+.all-textfields {
+    border-radius:15px;
+    font-weight: bold;
+    background-color: #c7f0db;
+    color: #6c7b95;
+    font-size: 1rem;
 }
