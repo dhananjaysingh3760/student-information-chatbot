@@ -1,0 +1,114 @@
+body {
+    background-color: #8bbabb;
+    font-family: 'Nunito', sans-serif;
+}
+
+#nav {
+    background-color: #464159;
+    padding : 0.5% 15% 0.3% 2%;
+}
+
+#brand{
+    font-family: 'Montserrat', sans-serif;
+    color: #c7f0db;
+    font-size: 2.2rem;
+    margin-left: 15px;
+    text-decoration: solid;
+}
+
+
+.nav-item {
+    position: relative;
+
+    padding: 0px 20px;
+}
+
+#nav-color {
+    border-style: solid;
+    border-color: #464159;
+    font-size: 1.3rem;
+    color: #8bbabb;
+}
+
+#nav-color:hover {
+    border-style: solid transparent;
+    border-color: #c7f0db;
+    border-radius: 15px;
+    color: #c7f0db;
+}
+
+.contain {
+    background-color:#8bbabb;
+    height:500px;
+}
+
+.carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-control-prev-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-img {
+    height: 500px;
+    width:100%
+}
+
+.options {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 3% 15% 2%;
+    color: #464159;
+    background-color: #8bbabb;
+
+}
+
+.options-button {
+    color: #464159;
+    border-color: #464159;
+}
+
+.options-button:hover {
+    color: #c7f0db;
+    background-color: #464159;
+    text-decoration: none;
+}
+
+.choice {
+    border-color: #464159;
+    margin: 25px 20px;
+}  
+
+.choice:hover {
+    background-color: #464159;
+    border-color: #464159;
+}
+
+.footer-padding {
+    padding :30px;
+    text-align: center;
+	padding-bottom: 70px;
+}
+
+.footer {
+    position: absolute;
+    bottom:0;
+	text-align: center;
+    width: 100%;
+    height: 100px;
+	background-color: #464159;
+}
+
+.footer p {
+    margin-bottom: 0px;
+    padding: 30px 0px;
+	font-size: 1.2rem;
+    color: #c7f0db;
+}
+
+.name1 {
+    display:inline;
+}

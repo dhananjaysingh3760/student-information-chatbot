@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href = "/images/logo.ico" rel = "icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca1507d3f0.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>student info manegement</title>
+
+</head>
+<body>
+    <section id = "nav">
+    <div class = "conainer-fluid">
+    <nav id = "navbar" class = "navbar navbar-expand-md navbar-dark ">
+        <a href = "/"><img src="/images/navbarLogo.png"></a>
+        <div  id="brand"   class="navbar-brand">IIT Roorkee</div >
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id = "navbarTogglerDemo01" class="collapse navbar-collapse">
+        <ul class = "navbar-nav ml-auto">
+            <li class = "nav-item">
+                <a href = "/" id="nav-color" class = "nav-link ">HOME</a>
+            </li>
+            <li class = "nav-item">
+                <a href = "/about" id="nav-color" class = "nav-link ">ABOUT</a>
+            </li>
+            <li class = "nav-item">
+                <a href = "/chatbot" id="nav-color" class = "nav-link">NAVIGATOR</a>
+            </li>
+            <li class = "nav-item">
+                <a href = "/creator" id="nav-color" class = "nav-link">CREATOR</a>
+            </li> 
+        </ul>
+      </div>    
+    </nav>
+    </div>
+    </section>
+<section>
+<div id="chatbot-container" class="conatiner fluid">
+    <p class="bot-reply"><span class="text-box">Hello</span> </p>
+    <p class="bot-reply"><span class="text-box">My name is NAVIGATOR</span></p>
+    <p class="bot-reply"><span class="text-box">What should i call you?</span></p>
+
+    <div class="user-reply stage1-query">
+        <label><span class="text-box">Write your first name-></span></label><br>
+        <input class="name-textfield" type="text" name = "name" placeholder="name" autocomplete="off">
+        <input  class="all-buttons btn btn-warning btn-S1" type="submit" value = "ok" name="stage1">
+    </div>
+
+    <p class="name user-reply "><span id="name1" class="text-box"></span></p>
+
+    <div class="stage2-query">
+        <p id="special" class="name1 bot-reply"><span id="name2" class="text-box"></span></p>
+        <p id="margin-p" class="bot-reply"><span class="text-box">What!! a nice name</span></p>
+        <p class="bot-reply"><span class="text-box">So,how could i help you?</span></p>
+        <p class="bot-reply"><span class="text-box">Enter ,which info u want to access-></span></p>
+        <div class="btn-S2">
+            <button class="all-buttons btn btn-warning bot-reply btni-S2" value="students information">Students Information</button>
+            <button class="all-buttons btn btn-warning bot-reply btnr-S2" value="students result">Students Result</button>
+        </div>
+    </div>
+
+    <p class="user-reply which-info"><span id="which-info" class="text-box"></span></p>
+
+    <div class="user-reply stage3-query-info">
+        <form action="/chatbot" method="POST">
+            <label><span class="text-box">Write the student's name to get info-></span></label><br>
+            <input type="text" name="stdName" placeholder="Student Name" autocomplete="off">
+            <input class="all-buttons btn btn-warning" type="submit" value="ok">
+        </form>
+    </div>
+
+    <div class="user-reply stage3-query-result">
+        <form action="/chatbot" method="POST">
+            <label><span class="text-box">write the student's name to get result</span></label><br>
+            <input type="text" name="stdName" placeholder="Student Name" autocomplete="off">
+            <input class="all-buttons btn btn-warning" type="submit" value="ok">
+        </form></div>
+    </div></div>
+</div>
+</section>
+
+<%- include("partials/footer"); -%>
