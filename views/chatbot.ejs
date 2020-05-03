@@ -38,9 +38,6 @@
             <li class = "nav-item">
                 <a href = "/chatbot" id="nav-color" class = "nav-link">NAVIGATOR</a>
             </li>
-            <li class = "nav-item">
-                <a href = "/creator" id="nav-color" class = "nav-link">CREATOR</a>
-            </li> 
         </ul>
       </div>    
     </nav>
@@ -55,7 +52,7 @@
     <div class="user-reply stage1-query">
         <label><span class="text-box2">Write your first name-></span></label><br>
         <input class="all-textfields name-textfield" type="text" name = "name" placeholder="name" autocomplete="off">
-        <input  class="all-buttons btn btn-warning btn-S1" type="submit" value = "ok" name="stage1">
+        <input  class="all-buttons btn btn-S1" type="submit" value = "ok" name="stage1">
     </div>
 
     <p class="name user-reply "><span id="name1" class="text-box2"></span></p>
@@ -64,28 +61,28 @@
         <p id="special" class="name1 bot-reply"><span id="name2" class="text-box1"></span></p>
         <p id="margin-p" class="bot-reply"><span class="text-box1">What!! a nice name</span></p>
         <p class="bot-reply"><span class="text-box1">So,how could i help you?</span></p>
-        <p class="bot-reply"><span class="text-box1">Enter ,which info u want to access-></span></p>
+        <p class="bot-reply"><span class="text-box1">Enter ,which result u want to access-></span></p>
         <div class="btn-S2">
-            <button class="all-buttons btn btn-warning bot-reply btni-S2" value="students information">Students Information</button>
-            <button class="all-buttons btn btn-warning bot-reply btnr-S2" value="students result">Students Result</button>
+            <button class="all-buttons btn bot-reply btni-S2" value="Class test">Class test</button>
+            <button class="all-buttons btn bot-reply btnr-S2" value="Total result">Total Result</button>
         </div>
     </div>
 
-    <p class="user-reply which-info"><span id="which-info" class="text-box2"></span></p>
+    <p class="user-reply which-result"><span id="which-result" class="text-box2"></span></p>
 
-    <div class="user-reply stage3-query-info">
+    <div class="user-reply stage3-query-classtest">
         <form action="/chatbot" method="POST">
-            <label><span class="text-box2">Write the student's name to get info-></span></label><br>
-            <input type="text" name="stdName" placeholder="Student Name" autocomplete="off">
-            <input class="all-buttons btn btn-warning" type="submit" value="ok">
+            <label><span class="text-box2">Enter the student's roll to get results of class test</span></label><br>
+            <input class="all-textfields" type="text" name="stdRoll" placeholder="Student Roll No" autocomplete="off">
+            <input class="all-buttons btn" name="button" type="submit" value="classtest">
         </form>
     </div>
 
-    <div class="user-reply stage3-query-result">
+    <div class="user-reply stage3-query-totalresult">
         <form action="/chatbot" method="POST">
-            <label><span class="text-box2">write the student's name to get result</span></label><br>
-            <input class="all-textfields" type="text" name="stdName" placeholder="Student Name" autocomplete="off">
-            <input class="all-buttons btn btn-warning" type="submit" value="ok">
+            <label><span class="text-box2">Enter the student's roll to get final result</span></label><br>
+            <input class="all-textfields" type="text" name="stdRoll" placeholder="Student Roll No" autocomplete="off">
+            <input class="all-buttons btn" type="submit" name="button" value="totalresult">
         </form></div>
     </div></div>
 </div>

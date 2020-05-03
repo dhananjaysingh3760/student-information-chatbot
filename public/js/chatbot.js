@@ -5,15 +5,15 @@ let whichInfo="";
 
 $(".name").hide();
 $(".stage2-query").hide();
-$(".stage3-query-info").hide();
-$(".stage3-query-result").hide();
-$(".which-info").hide();
+$(".stage3-query-classtest").hide();
+$(".stage3-query-totalresult").hide();
+$(".which-result").hide();
 
 $(".btn-S1").click(function(event){
     stage = 1;
     name = $(".name-textfield").val();
     console.log(typeof(name))
-    $("#name1").text("people call me " + name + "!!");
+    $("#name1").text("Hello my name is " + name + "!!");
     console.log(name);
     $(".stage1-query").slideUp(500);
     setTimeout(function(){
@@ -28,26 +28,26 @@ $(".btn-S1").click(function(event){
 })
 
 $(".btni-S2").click(function(event){
-    whichInfo = $(".btni-S2").val();
-    $("#which-info").text(whichInfo);
+    whichResult = $(".btni-S2").val();
+    $("#which-result").text(whichResult);
     $(".btn-S2").slideUp(500);
     setTimeout(function(){
-        $(".which-info").show();
+        $(".which-result").show();
     },500);
     setTimeout(function(){
-        $(".stage3-query-info").slideDown(500); 
+        $(".stage3-query-classtest").slideDown(500); 
     },1000)
 
 })
 
 $(".btnr-S2").click(function(event){
-    whichInfo = $(".btnr-S2").val();
-    $("#which-info").text(whichInfo);
+    whichResult = $(".btnr-S2").val();
+    $("#which-result").text(whichResult);
     $(".btn-S2").slideUp(500);
     setTimeout(function(){
-        $(".which-info").show();
+        $(".which-result").show();
     },500);
     setTimeout(function(){
-        $(".stage3-query-result").slideDown(500); 
+        $(".stage3-query-totalresult").slideDown(500); 
     },1000)
 })

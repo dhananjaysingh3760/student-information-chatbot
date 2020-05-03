@@ -1,0 +1,26 @@
+<%- include("partials/header"); -%>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+          <% for(let i =0;i<data.length;i++){ %>
+            <th scope="col"><%= data[i].name %></th>
+          <% } %>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><%= data[0].entry %></th>
+        <% for(let i =1;i<data.length;i++){ %>
+            <td><%= data[i].entry %></td>
+        <% } %>
+      </tr>
+  
+    </tbody>
+</table>
+<div style="text-align: center;" class="container-fluid option">
+    <p>To check another result press the below button</p>
+    <button type="button" class="choice btn btn-outline btn-lg"><a class="options-button" href="/chatbot">Navigator</a></button>
+</div>
+
+<%- include("partials/footer"); -%>
