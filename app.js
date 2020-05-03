@@ -38,10 +38,6 @@ app.get("/chatbot",function(req,res){
     res.render("chatbot");
 })
 
-app.get("/creator",function(req,res){
-    res.render("creator");
-})
-
 app.get("/result",function(req,res){
     console.log(data);
     res.render("result",{data:data});
