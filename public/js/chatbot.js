@@ -1,13 +1,19 @@
+//initialising all the required variables
+
 let stage = 0;
 let name="";
 let status="";
 let whichInfo="";
+
+//hiding all the response of the chatbot initially 
 
 $(".name").hide();
 $(".stage2-query").hide();
 $(".stage3-query-classtest").hide();
 $(".stage3-query-totalresult").hide();
 $(".which-result").hide();
+
+//adding the functionality of the first button
 
 $(".btn-S1").click(function(event){
     stage = 1;
@@ -27,6 +33,8 @@ $(".btn-S1").click(function(event){
     }
 })
 
+//adding functionality to second function
+
 $(".btni-S2").click(function(event){
     whichResult = $(".btni-S2").val();
     $("#which-result").text(whichResult);
@@ -39,6 +47,8 @@ $(".btni-S2").click(function(event){
     },1000)
 
 })
+
+//adding functionality to the last button and sending post request to the server
 
 $(".btnr-S2").click(function(event){
     whichResult = $(".btnr-S2").val();

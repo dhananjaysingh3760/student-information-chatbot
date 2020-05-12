@@ -8,6 +8,10 @@ body {
     padding : 0.5% 15% 0.3% 2%;
 }
 
+.icon {
+    width:300px;
+}
+
 #brand{
     font-family: 'Montserrat', sans-serif;
     color: #888888;
@@ -159,6 +163,8 @@ body {
 }
 
 .all-textfields {
+    padding: 5px 5px;
+    outline: none;
     border-radius:15px;
     font-weight: bold;
     background-color: #ffe8df;

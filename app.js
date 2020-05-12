@@ -1,7 +1,11 @@
+//getting all the required modules
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const ejs = require("ejs")
+
+//Activating all the required functionality
 
 const app = express();
 
@@ -10,7 +14,11 @@ app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/grades",{useNewUrlParser:true,useUnifiedTopology: true})
+//linking the database
+
+mongoose.connect("mongodb+srv://admin-arushi:aru123@infochatbot-nuj0r.mongodb.net/grades",{useNewUrlParser:true,useUnifiedTopology: true})
+
+//creating a mongoDB model for accesing info 
 
 const gradeSchema = new mongoose.Schema({
     "Class Roll":Number,
@@ -29,6 +37,8 @@ const gradeSchema = new mongoose.Schema({
 })
 let data = [];
 const Grade = mongoose.model("Grade",gradeSchema,"grade");
+
+//setting all the get and post requests of the routes
 
 app.get("/",function(req,res){
     res.render("home");
@@ -56,6 +66,7 @@ app.post("/chatbot",function(req,res){
     const enrollNo = Number(req.body.stdRoll);
     const button = req.body.button;
     Grade.find({"Class Roll":enrollNo},function(err,foundItems){
+       console.log(foundItems)
         if(err){
             console.log(err)
         }else{
@@ -147,6 +158,9 @@ app.post("/chatbot",function(req,res){
 
 })
 
+//making server to listen
+
 app.listen(3000,function(){
     console.log("Server has started");
 })
+
