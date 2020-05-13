@@ -20,6 +20,10 @@ body {
     text-decoration: solid;
 }
 
+.dropdown {
+    border-radius: 5px;
+    background-color: #888888;
+}
 
 .nav-item {
     position: relative;
@@ -38,7 +42,7 @@ body {
     border-style: solid transparent;
     border-color: #ffe8df;
     border-radius: 15px;
-    color: #ffe8df;
+    color: #888888;
 }
 
 .contain {
@@ -94,11 +98,11 @@ body {
 .footer-padding {
     padding :30px;
     text-align: center;
-	padding-bottom: 70px;
+	padding-bottom:57px;
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom:0;
 	text-align: center;
     width: 100%;
@@ -122,4 +126,83 @@ body {
     background-color: #ffffff;
     color: #888888;
     font-size: 1.3rem;
+}
+
+@media only screen and (max-height:944px) {
+    .carousel-img {
+        height: 400px;
+    }
+
+    .options {
+        padding:3% 3%;
+    }
+
+    .carousel-inner {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-height:880px) {
+    .carousel-img {
+        height: 400px;
+    }
+
+    .options {
+
+        padding:3% 3%;
+    }
+
+    .carousel-inner {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-height:944px) {
+    .carousel-img {
+        height: 450px;
+    }
+
+    .options {
+        
+        padding:3% 3%;
+    }
+
+    .carousel-inner {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width:431px) {
+   .icon {
+       width:100px;
+   }
+   
+    .carousel-img {
+        height: 225px;
+    }
+
+    .options {       
+        padding:3% 3%;
+    }
+
+    .carousel-inner {
+        height: 225px;
+    }
+ 
+    .options-text {
+        font-size: 1rem;
+    }
+    .footer p{
+        font-size: 0.87rem;
+    }
+    .options-button{
+        font-size: 1rem;
+    }
+    .choice {
+        padding: 2px 4px;
+        margin: 15px 10px;
+    }
+    .footer {
+        height: 80px;
+    }
 }
