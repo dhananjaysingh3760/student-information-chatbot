@@ -189,6 +189,9 @@ body {
     .carousel-inner {
         height: 400px;
     }
+    #chatbot-container {
+        padding: 3% 5%;
+    }
 }
 
 @media only screen and (max-height:880px) {
@@ -204,6 +207,9 @@ body {
     .carousel-inner {
         height: 400px;
     }
+    #chatbot-container {
+        padding: 3% 5%;
+    }
 }
 
 @media only screen and (max-height:944px) {
@@ -218,6 +224,9 @@ body {
 
     .carousel-inner {
         height: 450px;
+    }
+    #chatbot-container {
+        padding: 3% 5%;
     }
 }
 
@@ -297,5 +306,9 @@ body {
         background-color: #ffe8df;
         color: #888888;
         font-size: 1rem;
+    }
+
+    #chatbot-container {
+        padding: 3% 5%;
     }
 }
